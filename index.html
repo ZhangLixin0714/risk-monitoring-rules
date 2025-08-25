@@ -1,130 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Request Access to Risk Monitoring Rules</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.5;
-        padding: 2rem;
-        background-color: #f9f9f9;
-        color: #333;
-      }
-      .container {
-        max-width: 600px;
-        margin: auto;
-        background: #fff;
-        padding: 2rem;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-      h1 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-      }
-      p.instructions {
-        font-size: 0.95rem;
-        margin-bottom: 1.5rem;
-      }
-      label {
-        display: block;
-        margin-bottom: 0.5rem;
-        font-weight: bold;
-      }
-      input[type="text"],
-      input[type="email"],
-      textarea {
-        width: 100%;
-        padding: 0.5rem;
-        margin-bottom: 1rem;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-      textarea {
-        min-height: 100px;
-      }
-      button {
-        background-color: #007acc;
-        color: #fff;
-        border: none;
-        padding: 0.75rem 1.5rem;
-        font-size: 1rem;
-        cursor: pointer;
-        border-radius: 4px;
-      }
-      button:hover {
-        background-color: #005fa3;
-      }
-      footer {
-        margin-top: 2rem;
-        font-size: 0.8rem;
-        color: #666;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Request Your Risk Monitoring Rules Package</h1>
-      <p class="instructions">
-        Please fill out the form below to request access to our package of risk monitoring rule templates. Once you submit the form, we'll receive your information and redirect you to a page where you can download the rules.
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Access to Risk Monitoring Rules Research Package</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    p.instructions {
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    textarea {
+      min-height: 100px;
+    }
+    button {
+      background-color: #007acc;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Request Your Risk Monitoring Rules Research Package</h1>
+    <p class="instructions">
+      Please fill out the form below to request access to our research package of risk monitoring rule templates. Once you submit the form, we'll receive your information and redirect you to a page where you can download the research package.
+    </p>
+    <!-- How to use this page:
+      1. The form action is set to FormSubmit's endpoint with your email address (rosiezhang1218@gmail.com). When someone submits the form, FormSubmit will forward the data to your email.
+      2. The _next hidden field defines the page to redirect to after submission. Here it's set to download_thanks.html, which should be hosted in the same directory.
+      3. The _subject hidden field sets the subject line of the email you receive. Adjust as needed.
+      4. The form collects organisation name, your name, email address, state/region, and an optional use case description.
+      5. You can freely modify the text, styling, or fields according to your needs. This page contains no confidential banking data.
+    -->
+    <form action="https://formsubmit.co/rosiezhang1218@gmail.com" method="POST" enctype="multipart/form-data">
+      <label for="organization">Organization Name (required)</label>
+      <input type="text" name="organization" id="organization" required />
+      <label for="name">Your Name (required)</label>
+      <input type="text" name="name" id="name" required />
+      <label for="email">Email Address (required)</label>
+      <input type="email" name="email" id="email" required />
+      <label for="state">State/Region (optional)</label>
+      <input type="text" name="state" id="state" />
+      <label for="usecase">How do you plan to use these rules? (optional)</label>
+      <textarea name="usecase" id="usecase" placeholder="Please briefly describe your intended use..."></textarea>
+      <!-- Hidden fields for FormSubmit configuration -->
+      <input type="hidden" name="_next" value="https://zhanglixin0714.github.io/risk-monitoring-rules/download_thanks.html" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_subject" value="New Risk Monitoring Rules Research Package Request" />
+      <button type="submit">Submit Request</button>
+    </form>
+    <footer>
+      <p>
+        By submitting this form, you consent to be contacted with the download link and any related updates. You may request removal of your information at any time.
       </p>
-      <!--
-        How to use this page:
-        1. The form action is set to FormSubmit's endpoint with your email address (rosiezhang1218@gmail.com). When someone submits the form, FormSubmit will forward the data to your email.
-        2. The _next hidden field defines the page to redirect to after submission. Here it's set to download_thanks.html, which should be hosted in the same directory.
-        3. The _subject hidden field sets the subject line of the email you receive. Adjust as needed.
-        4. The form collects organisation name, your name, email address, state/region, and an optional use case description.
-        5. You can freely modify the text, styling, or fields according to your needs. This page contains no confidential banking data.
-      -->
-      <form
-        action="https://formsubmit.co/rosiezhang1218@gmail.com"
-        method="POST"
-        enctype="multipart/form-data"
-      >
-        <label for="organization">Organization Name (required)</label>
-        <input type="text" name="organization" id="organization" required />
-
-        <label for="name">Your Name (required)</label>
-        <input type="text" name="name" id="name" required />
-
-        <label for="email">Email Address (required)</label>
-        <input type="email" name="email" id="email" required />
-
-        <label for="state">State/Region (optional)</label>
-        <input type="text" name="state" id="state" />
-
-        <label for="usecase">How do you plan to use these rules? (optional)</label>
-        <textarea
-          name="usecase"
-          id="usecase"
-          placeholder="Please briefly describe your intended use..."
-        ></textarea>
-
-        <!-- Hidden fields for FormSubmit configuration
-          The _next field defines the page users are redirected to after submission.
-          Update this URL to point at your GitHub Pages site when deployed.
-        -->
-        <input
-          type="hidden"
-          name="_next"
-          value="https://zhanglixin0714.github.io/risk-monitoring-rules/download_thanks.html"
-        />
-        <input type="hidden" name="_captcha" value="false" />
-        <input
-          type="hidden"
-          name="_subject"
-          value="New Risk Monitoring Rules Request"
-        />
-        <button type="submit">Submit Request</button>
-      </form>
-      <footer>
-        <p>
-          By submitting this form, you consent to be contacted with the download link and any related updates. You may request removal of your information at any time.
-        </p>
-      </footer>
-    </div>
-  </body>
+    </footer>
+  </div>
+</body>
 </html>
